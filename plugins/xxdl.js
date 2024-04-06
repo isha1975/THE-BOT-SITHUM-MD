@@ -25,8 +25,8 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
         conn.sendFile(
           m.chat,
           files.high,
-          '${tittle}.mp4',
-          '${tittle}\n\n*xɴxx ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ꜱɪͣᴛʜͫᴜ*\n*ᴘᴏᴡᴇʀᴅ ʙʏ ᴋᴀʟɪ ᴏꜰᴄ*',
+          'video.mp4',
+          '*xɴxx ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ꜱɪͣᴛʜͫᴜ*\n*ᴘᴏᴡᴇʀᴅ ʙʏ ᴋᴀʟɪ ᴏꜰᴄ*',
           m
         );
         m.react('✅');
