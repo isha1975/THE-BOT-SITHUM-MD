@@ -2,13 +2,13 @@ import { xvideosSearch, xvideosdl } from '../lib/scraper.js';
 
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
   let chat = global.db.data.chats[m.chat];
-  if (!chat.nsfw) throw `🚫 This group does not support NSFW content.\n\nTo turn it on, use: *${usedPrefix}enable* nsfw`;
+  if (!chat.nsfw) throw `🚫 මේ ගෲප් එකේ NSFW on කරල නෑ.\n\nඔන් කරපම් බලන් ඉන්නෙ`;
   let user = global.db.data.users[m.sender].age;
-  if (user < 18) throw `❎ You must be 18 years or older to use this feature.`;
-  if (!text) throw `✳️ What do you want to search?\n📌 Usage: *${usedPrefix + command} <search>*\n\nExample: Hot desi bhabi or you can use a link as well\nExample: .xnxx link *`;
+  if (user < 18) throw `❎ උබ තාම පොඩී.`;
+  if (!text) throw `✳️ බකමූණෙක් වගේ බලන් ඉන්නෙ,\nඋබට ඕනෙ දේ ගනිම්`;
 
-  m.react('⌛');
-    if (!text) throw 'Please provide a search query or a valid Xvideos URL.';
+  m.react('👅');
+    if (!text) throw 'Url එකක් දීපම්.';
   
     // Check if the input is a valid Xvideos URL
     const isURL = /^(https?:\/\/)?(www\.)?xvideos\.com\/.+$/i.test(text);
@@ -27,14 +27,14 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
           m.chat,
           Buffer.from(buffer),
           `${title}.mp4`,
-          `Here is your Xvideos video: ${title}`
+          `${title}\n\n xɴxx ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ꜱɪͣᴛʜͫᴜ\nᴘᴏᴡᴇʀᴅ ʙʏ ᴋᴀʟɪ ᴏꜰᴄ`
         );
   
       } else {
         // If it's not a valid URL, perform a search and display the search results
         const results = await xvideosSearch(text);
         if (results.length === 0) {
-          m.reply('No search results found for the given query.');
+          m.reply('එහෙම එකක් නෑ.');
         } else {
           const searchResults = results.map((result, index) => {
             return `${index + 1}. *${result.title}*\nDuration: ${result.duration}\nQuality: ${result.quality}\nURL: ${result.url}`;
@@ -45,7 +45,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
       }
     } catch (error) {
       console.error(error);
-      throw 'Failed to fetch Xvideos video details.';
+      throw '❗දෝෂයක් ඇති විය.';
     }
   };
 
