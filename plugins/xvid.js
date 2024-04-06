@@ -26,8 +26,8 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
         conn.sendFile(
           m.chat,
           Buffer.from(buffer),
-          `${title}.mp4`,
-          `${tittle}\n\n*xᴠɪᴅᴇᴏꜱ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ꜱɪͣᴛʜͫᴜ*\n*ᴘᴏᴡᴇʀᴅ ʙʏ ᴋᴀʟɪ ᴏꜰᴄ*`
+          `video.mp4`,
+          `*xᴠɪᴅᴇᴏꜱ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ꜱɪͣᴛʜͫᴜ*\n*ᴘᴏᴡᴇʀᴅ ʙʏ ᴋᴀʟɪ ᴏꜰᴄ*`
         );
   
       } else {
