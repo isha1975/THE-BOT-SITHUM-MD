@@ -26,7 +26,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
           m.chat,
           files.high,
           'video.mp4',
-          'Here is your video',
+          'xɴxx ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ꜱɪͣᴛʜͫᴜ\nᴘᴏᴡᴇʀᴅ ʙʏ ᴋᴀʟɪ ᴏꜰᴄ',
           m
         );
         m.react('✅');
