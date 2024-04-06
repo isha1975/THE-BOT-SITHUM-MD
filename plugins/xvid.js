@@ -27,7 +27,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
           m.chat,
           Buffer.from(buffer),
           `${title}.mp4`,
-          `${title}\n\n xɴxx ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ꜱɪͣᴛʜͫᴜ\nᴘᴏᴡᴇʀᴅ ʙʏ ᴋᴀʟɪ ᴏꜰᴄ`
+          `${tittle}\n\n*xᴠɪᴅᴇᴏꜱ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙʏ ꜱɪͣᴛʜͫᴜ*\n*ᴘᴏᴡᴇʀᴅ ʙʏ ᴋᴀʟɪ ᴏꜰᴄ*`
         );
   
       } else {
