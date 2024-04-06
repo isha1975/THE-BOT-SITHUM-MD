@@ -6,14 +6,14 @@ import fs from 'fs'
 
 //OwnerShip
 global.owner = [
-  [process.env.OWNER_NUMBER || '254710772666', process.env.OWNER_NAME || 'Developer Ibrahim', true],
-  ['254710772666', 'Ibrahim Tech ✨', true]
+  [process.env.OWNER_NUMBER || '94787659722', process.env.OWNER_NAME || 'ꜱɪͣᴛʜͫᴜ', true],
+  ['94787659722', 'ꜱɪͣᴛʜͫᴜ ⚖️', true]
 ]
 global.mods = []
 global.prems = []
 
-global.author = process.env.OWNER_NAME || 'Ibrahim Adams'
-global.botname = process.env.BOT_NAME || 'ALAN;WALKER-MD'
+global.author = process.env.OWNER_NAME || 'ꜱɪͣᴛʜͫᴜ'
+global.botname = process.env.BOT_NAME || 'THE-BOT-SITHUM-MD'
  
  
  //Api's
@@ -26,11 +26,11 @@ global.APIKeys = {
 global.shizokeys = 'shizo'
 
 //Sticker Watermarks
-global.stkpack = process.env.BOT_NAME || 'ALAN;WALKER-MD'
-global.stkowner = process.env.OWNER_NAME || '© Ibrahim Tech'
+global.stkpack = process.env.BOT_NAME || 'THE-BOT-SITHUM-MD'
+global.stkowner = process.env.OWNER_NAME || '© ꜱɪͣᴛʜͫᴜ'
 
 //Watermark
-global.maker = process.env.MAKER || 'Made with Ibrahim Adams'
+global.maker = process.env.MAKER || 'Made with ꜱɪͣᴛʜͫᴜ'
 
 //global emojis
 global.wait = '*⌛ _Charging..._*\n*▰▰▰▱▱▱▱▱*'
